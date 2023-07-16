@@ -1,6 +1,6 @@
 # Beispiel: Statischer Nginx Pod
 
-## Walkthrough 
+## Walkthrough (Pod erstellen)
 
 ```
 cd 
@@ -32,4 +32,10 @@ kubectl describe pod nginx-static-web
 # Zeige die Konfiguration
 kubectl get pod/nginx-static-web -o yaml
 kubectl get pod/nginx-static-web -o wide 
+```
+
+## Pod löschen 
+
+```
+kubectl delete -f nginx-static.yml
 ```
