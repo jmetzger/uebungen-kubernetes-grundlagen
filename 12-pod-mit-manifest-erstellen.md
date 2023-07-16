@@ -11,7 +11,7 @@ cd web
 ```
 
 ```
-# vi nginx-static.yml 
+# nano nginx-static.yml 
 
 apiVersion: v1
 kind: Pod
