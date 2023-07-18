@@ -48,6 +48,49 @@ kubectl get all
 
 ```
 # Watch the pods 
-kubectl delete pods nginx-replicaset-<nr>; kubectl get pods -w 
+kubectl delete pods nginx-replica-set-<nr>; kubectl get pods -w 
 # CTRL + c
 ```
+
+## Schritt 4: Pods überprüfen
+
+```
+# Schaut Euch an, wie lange der neue Pod schon läuft
+# und auf welchen Nodes die Pods laufen 
+kubectl get pods -o wide
+```
+
+## Schritt 5: Welche Image-Version wird verwendet 
+
+```
+kubectl get pods -o yaml | less
+# raus mit q 
+```
+
+## Schritt 6: Version mit Nano ändern
+
+```
+# nano rs.yml
+# Zeile:
+# image: nginx:1.25
+# durch
+image: nginx:1.24
+# ersetzen
+```
+
+### Schritt 7: Anwenden 
+
+```
+kubectl apply -f rs.yml
+```
+
+### Schritt 8: Hat sich das image geändern 
+
+```
+# keine Änderung der Zeit als auch kein neues Image
+kubectl get pods
+
+# Gegenprobe
+kubectl describe pods nginx-replica-set<nr>
+```
+
