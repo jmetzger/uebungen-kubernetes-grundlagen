@@ -51,6 +51,7 @@ kubectl get all
 kubectl delete po nginx-deployment-<hash>-<nr>
 # Wird ein neuer erstellt ?
 kubectl get pods -w
+# Raus kommst du hier mit der STRG + C - Tastenkombination
 ```
 
 ### Schritt 3: Die Image Version ändern 
@@ -64,7 +65,8 @@ image: nginx:1.25
 
 ```
 # Wir wollen schnell alles sehen  ;o) 
-kubectl apply -f deploy.yml; kubectl get all; kubectl get pods -w 
+kubectl apply -f deploy.yml; kubectl get all; kubectl get pods -w
+# Raus kommst du hier mit der STRG + C - Tastenkombination
 ```
 
 ## Löschen 
