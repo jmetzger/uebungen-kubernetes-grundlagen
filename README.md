@@ -7,3 +7,4 @@ zum einfachen Kopieren für das Training.
 
   * [12 Pod mit manifest erstellen](12-pod-mit-manifest-erstellen.md)
   * [14 Replicaset erstellen und erforschen](14-replicaset-erstellen-und-erforschen.md)
+  * [15 Replicaset löschen](15-replicaset-loeschen.md)
