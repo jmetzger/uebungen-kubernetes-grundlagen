@@ -1,4 +1,4 @@
-# Ein Deployment erstellen
+# Ein Deployment erstellen, erforschen und löschen 
 
 ## Erstellen
 ```
