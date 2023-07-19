@@ -1,6 +1,6 @@
 # Ein Deployment erstellen, erforschen und löschen 
 
-## Erstellen
+## Schritt 1: Erstellen
 ```
 cd
 cd manifests
@@ -37,7 +37,7 @@ spec:
 kubectl apply -f deploy.yml 
 ```
 
-## Erforschen 
+## Schritt 2: Erforschen 
 
 ### Wo seid ihr ? 
 
@@ -53,7 +53,7 @@ kubectl delete po nginx-deployment-<hash>-<nr>
 kubectl get pods -w
 ```
 
-### Die Image Version ändern 
+### Schritt 3: Die Image Version ändern 
 
 ```
 # nano deploy.yml
