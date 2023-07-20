@@ -9,4 +9,5 @@ zum einfachen Kopieren für das Training.
   * [14 Replicaset erstellen und erforschen](14-replicaset-erstellen-und-erforschen.md)
   * [15 Replicaset löschen](15-replicaset-loeschen.md)
   * [16 Deployment erstellen, erforschen](16-deployment-erstellen-erforschen-loeschen.md)
+  * [17 Deployment - Wie können wir auf die Pods zugreifen ?](17-zugriff-pods-busybox.md)
   * [18 Deployment löschen](https://github.com/jmetzger/uebungen-kubernetes-grundlagen/blob/main/16-deployment-erstellen-erforschen-loeschen.md#l%C3%B6schen)
