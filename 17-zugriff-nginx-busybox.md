@@ -1,4 +1,4 @@
-# Deployment - Wie können wir auf die Pods zugreifen ?
+# Deployment - Wie können wir auf den Nginx zugreifen ?
 
 ## Voraussetzung: 
 
