@@ -1,5 +1,9 @@
 # Deployment - Wie können wir auf die Pods zugreifen ?
 
+## Voraussetzung: 
+
+  * Die Pods auf der letzten Übung (Deployment) laufen noch
+
 ## Schritt 1: Pod-IP rausfinden 
 
 ```
