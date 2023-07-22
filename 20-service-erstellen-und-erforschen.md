@@ -10,6 +10,7 @@
 ### Schritt 1: Deployment nochmal ausführen 
 
 ```
+cd
 cd manifests
 cd 03-deploy
 kubectl apply -f deploy.yml
