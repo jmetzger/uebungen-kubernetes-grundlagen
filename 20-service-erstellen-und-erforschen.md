@@ -2,7 +2,7 @@
 
 ## Voraussetzung
 
- * Die Dateien aus dem vorigen Deployment sollte noch da sein.
+ * Die Dateien aus dem vorigen Deployment sollten noch da sein.
  * Wenn nicht, gehe bitte nochmal zurück und erstelle die Dateien
 
 ## Der Weg zum Service 
