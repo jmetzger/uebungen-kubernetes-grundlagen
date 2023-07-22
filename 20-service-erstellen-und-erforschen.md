@@ -101,7 +101,7 @@ spec:
 ```
 
 ```
-kubectl apply -f
+kubectl apply -f .
 ```
 
 ```
