@@ -31,12 +31,12 @@ metadata:
   name: app1
   labels:
     svc: nginx
-  spec:
-    ports:
-    - port: 80
-      protocol: TCP
-    selector:
-      app: nginx 
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: nginx 
 ```
 
 ```
