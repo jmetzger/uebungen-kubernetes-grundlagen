@@ -11,4 +11,4 @@ zum einfachen Kopieren für das Training.
   * [16 Deployment erstellen, erforschen](16-deployment-erstellen-erforschen-loeschen.md)
   * [17 Deployment - Wie können wir auf den nginx zugreifen ?](17-zugriff-nginx-busybox.md)
   * [18 Deployment löschen](https://github.com/jmetzger/uebungen-kubernetes-grundlagen/blob/main/16-deployment-erstellen-erforschen-loeschen.md#l%C3%B6schen)
-  * [20 Wir erstellen den ersten Service ein und erforschen ihn](16-service-erstellen-und-erforschen.md)
+  * [20 Wir erstellen den ersten Service ein und erforschen ihn](20-service-erstellen-und-erforschen.md)
