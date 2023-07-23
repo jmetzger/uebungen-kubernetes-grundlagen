@@ -5,7 +5,7 @@
 ```
 kubectl get svc app1 
 # z.B.
-# 10.245.116.220
+# 10.245.116.200
 ``` 
 
 ## Schritt 1: busybox starten 
