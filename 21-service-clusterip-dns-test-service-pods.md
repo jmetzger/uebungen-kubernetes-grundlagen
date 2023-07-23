@@ -65,7 +65,7 @@ kubectl get svc app1
 
 ```
 # busybox starten
-kubectl run -it --rm --image busybox
+kubectl run -it --rm --image busybox podtester
 ```
 
 ```
