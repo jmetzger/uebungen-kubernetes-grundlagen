@@ -5,7 +5,7 @@
 ```
 kubectl get svc app1 
 # z.B.
-# 10.245.79.39
+# 10.245.116.220
 ``` 
 
 ## Schritt 1: busybox starten 
@@ -23,14 +23,14 @@ kubectl run -it --rm --image=busybox podtester
 # Wir wollen nachher sehen, auf welchen Pods er landet 
 wget -O - http://<ClusterIP> # aus Schritt 1:
 # z.B.
-# wget -O - http://10.245.79.39 
+# wget -O - http://10.245.116.200 
 ```
 
 ```
 # Ping funktioniert nicht und das ist o.k., ist nicht in der Firewall eingerichtet
 ping <ClusterIP>
 # z.B.
-# ping 10.245.79.39 
+# ping 10.245.116.200
 ```
 
 ## Schritt 3: Verbinden über DNS-Namen der ClusterIP (innerhalb des podtester - pods) 
@@ -75,7 +75,7 @@ wget -O - http://app1
 # und auch neue ClusterIP z.B .. .. geht
 wget -O - http://<ClusterIP>
 # z.B.
-# wget - http://10.245.116.200
+# wget - http://10.245.114.220
 ```
 
 ```
