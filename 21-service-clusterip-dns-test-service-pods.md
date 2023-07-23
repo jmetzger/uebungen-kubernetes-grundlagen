@@ -79,7 +79,8 @@ wget -O - http://<ClusterIP>
 ```
 
 ```
-# busybox beeenden
+# busybox beenden
+exit
 ```
 
 ## Schritt 6: Logs aller Pods anschauen 
