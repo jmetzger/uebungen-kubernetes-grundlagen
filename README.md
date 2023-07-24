@@ -13,3 +13,4 @@ zum einfachen Kopieren für das Training.
   * [18 Deployment löschen](https://github.com/jmetzger/uebungen-kubernetes-grundlagen/blob/main/16-deployment-erstellen-erforschen-loeschen.md#l%C3%B6schen)
   * [20 Wir erstellen den ersten Service ein und erforschen ihn](20-service-erstellen-und-erforschen.md)
   * [21 Wir verbinden uns über die ClusterIP und den DNS-Eintrag mit den Pods des Services](21-service-clusterip-dns-test-service-pods.md)
+  * [22 Den Service von aussen erreichen (NodePort)](22-service-nodeport-test-service-pods.md)
