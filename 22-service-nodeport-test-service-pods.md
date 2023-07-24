@@ -3,8 +3,8 @@
 ## Voraussetzung
 
   * Der Service sollte aus der letzten Übung noch eingerichtet sein
-  * Die Datei service.yml sollte im Verzeichnis manifests/03-deploy vorhanden
-  * Wenn nicht: !Bitte nochmal zur vorigen Lektion zurückgehen!
+  * Die Datei service.yml sollte im Verzeichnis manifests/03-deploy vorhanden sein.
+  * Falls nicht: Bitte nochmal zur vorigen Lektion zurückgehen!
 
 
 ## Schritt 1: Service anpassen und apply'en
