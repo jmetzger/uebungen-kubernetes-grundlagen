@@ -1,11 +1,10 @@
-# Den Service von aussen erreichen (NodePort) 
+# Den Service von aussen erreichen (LoadBalancer = EXTERNAL-IP) 
 
 ## Voraussetzung
 
   * Der Service sollte aus der letzten Übung noch eingerichtet sein
   * Die Datei service.yml sollte im Verzeichnis manifests/03-deploy vorhanden sein.
   * Falls nicht: Bitte nochmal zur Lektion zum Einrichten des Deployments zurückgehen!
-
 
 ## Schritt 1: Service anpassen und apply'en
 
