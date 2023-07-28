@@ -11,7 +11,7 @@
 ```
 # nano service.yml 
 # Datei service.yml anpassen
-# type: NodePort (Bitte Groß- und Kleinschreibung beachten)
+# type: LoadBalancer (Bitte Groß- und Kleinschreibung beachten)
 # muss ergänzt werden
 spec:
   type: LoadBalancer
