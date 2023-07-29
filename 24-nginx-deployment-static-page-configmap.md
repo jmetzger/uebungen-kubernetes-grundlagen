@@ -122,7 +122,7 @@ kubectl run -it --rm --image=busybox podtester
 ping  -c 4 10.244.1.99
 
 # Nginx aufrufen
-wget -O - http://<PodIP>
+# wget -O - http://<PodIP>
 # z.B.
 wget -O - http://10.244.1.99
 ```
