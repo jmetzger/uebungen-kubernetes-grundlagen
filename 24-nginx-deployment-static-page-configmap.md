@@ -3,7 +3,7 @@
 ## Voraussetzungen 
 
   * Ordner manifests/03-deploy ist vorhanden mit deployment.yml und service.yml 
-  * Wenn nicht gehe bitte zu den vorigen Lektionen zurück.
+  * Wenn nicht gehe bitte zu den vorigen Lektionen zurück und erstelle den Service und das Deployment (app1)
 
 ## Schritt 1: Umbau  
 
