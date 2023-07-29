@@ -53,5 +53,65 @@ nano 02-deployment-cm.yml
 ```
 
 ```
+# nano deploy.yml 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-custom-index
+spec:
+  selector:
+    matchLabels:
+      app: nginx-app2
+  replicas: 8 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: nginx-app2
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.24
+        ports:
+        - containerPort: 80
+        
+```
+
+```
+kubectl apply -f 02-deployment-cm.yml 
+```
+
+## Schritt 4: Testen (vorhanden ;o) ?)
+
+```
+# Ist das neue deployment da
+kubectl get all 
+# wir lassen uns nur alle Objekte mit nginx-app2 anzeigen
+kubectl get all -l app:nginx-app2
+```
+
+## Schritt 5: Zugriff testen (eines Pods aus Deployment)
+
+```
+# PodIP eines beliebigen Pods raussuchen
+# z.B. 
+kubectl get pods -o wide -l app:nginx-app2
+
+# busybox starten 
+kubetl run -it --rm --image=busybox podtester
+````
+
+```
+# Pod anpingen
+# ping <PodIP>
+# z.B.
+ping
+
+# Nginx aufrufen
+wget -O - http://<PodIP>
+# z.B.
+wget -O - http://
+
+# pod verlassen
+exit
 
 ```
