@@ -85,6 +85,15 @@ spec:
         image: nginx:1.24
         ports:
         - containerPort: 80
+
+        volumeMounts:
+        - name: nginx-index-file
+          mountPath: /usr/share/nginx/html/
+
+      volumes:
+      - name: nginx-index-file
+        configMap:
+          name: nginx-configmap-index
         
 ```
 
@@ -99,6 +108,9 @@ kubectl apply -f 02-deployment-cm.yml
 kubectl get all 
 # wir lassen uns nur alle Objekte mit nginx-app2 anzeigen
 kubectl get all -l app=nginx-app2 
+
+# find if the volumes are mounted correctly
+kubectl describe deploy nginx-custom-index
 ```
 
 ## Schritt 6: Zugriff testen (eines Pods aus neuem Deployment)
