@@ -85,7 +85,6 @@ spec:
         image: nginx:1.24
         ports:
         - containerPort: 80
-
         volumeMounts:
         - name: nginx-index-file
           mountPath: /usr/share/nginx/html/
