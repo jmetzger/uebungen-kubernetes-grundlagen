@@ -46,7 +46,18 @@ data:
 kubectl apply -f .
 ```
 
-## Schritt 3: Configmap einbinden 
+## Schritt 3: Configmap erforschen
+
+```
+kubectl get cm
+kubectl get cm nginx-configmap-index
+# genauere Infos bekommen 
+kubectl describe cm nginx-configmap-index
+# Alternative
+kubectl get cm nginx-configmap-index -o yaml
+```
+
+## Schritt 4: Configmap einbinden 
 
 ```
 # cm = configmap 
@@ -81,7 +92,7 @@ spec:
 kubectl apply -f 02-deployment-cm.yml 
 ```
 
-## Schritt 4: Testen (vorhanden ;o) ?)
+## Schritt 5: Testen/Erforschen (Deployment vorhanden ;o) ?)
 
 ```
 # Ist das neue deployment da
@@ -90,7 +101,7 @@ kubectl get all
 kubectl get all -l app:nginx-app2
 ```
 
-## Schritt 5: Zugriff testen (eines Pods aus Deployment)
+## Schritt 6: Zugriff testen (eines Pods aus neuem Deployment)
 
 ```
 # PodIP eines beliebigen Pods raussuchen
