@@ -112,6 +112,23 @@ kubectl get all -l app=nginx-app2
 kubectl describe deploy nginx-custom-index
 ```
 
+```
+# konkreten pod auswählen und verwenden
+# z.B. 
+kubectl exec -it nginx-custom-index-59c898fdf4-7prdl -- bash
+```
+
+```
+# Zeige uns den Inhalt
+ # im container
+cat /usr/share/nginx/html/index.html
+```
+
+```
+# Pod/Container verlassen
+exit
+```
+
 ## Schritt 6: Zugriff testen (eines Pods aus neuem Deployment)
 
 ```
