@@ -107,6 +107,7 @@ kubectl get all -l app=nginx-app2
 # PodIP eines beliebigen Pods raussuchen
 # z.B. 
 kubectl get pods -o wide -l app=nginx-app2
+```
 
 # busybox starten 
 kubectl run -it --rm --image=busybox podtester
@@ -116,7 +117,7 @@ kubectl run -it --rm --image=busybox podtester
 # Pod anpingen
 # ping <PodIP>
 # z.B.
-ping  http://10.244.1.99
+ping  10.244.1.99
 
 # Nginx aufrufen
 wget -O - http://<PodIP>
