@@ -42,6 +42,7 @@ data:
 ```
 
 ```
+# Denke an den Punkt am Ende ;o)
 kubectl apply -f .
 ```
 
