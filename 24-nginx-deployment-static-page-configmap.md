@@ -109,6 +109,7 @@ kubectl get all -l app=nginx-app2
 kubectl get pods -o wide -l app=nginx-app2
 ```
 
+```
 # busybox starten 
 kubectl run -it --rm --image=busybox podtester
 ````
