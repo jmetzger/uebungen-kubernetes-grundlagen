@@ -119,7 +119,7 @@ kubectl run -it --rm --image=busybox podtester
 # Pod anpingen
 # ping <PodIP>
 # z.B.
-ping  10.244.1.99
+ping  -c 4 10.244.1.99
 
 # Nginx aufrufen
 wget -O - http://<PodIP>
