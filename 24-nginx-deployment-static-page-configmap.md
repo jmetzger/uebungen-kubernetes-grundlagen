@@ -1,4 +1,4 @@
-# Nginx mit einer statischen Seite erstellen (configmap)
+# Nginx-Deployment mit einer statischen Seite erstellen (configmap)
 
 ## Voraussetzungen 
 
