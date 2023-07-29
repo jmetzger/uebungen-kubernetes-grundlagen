@@ -98,7 +98,7 @@ kubectl apply -f 02-deployment-cm.yml
 # Ist das neue deployment da
 kubectl get all 
 # wir lassen uns nur alle Objekte mit nginx-app2 anzeigen
-kubectl get all -l app:nginx-app2
+kubectl get all -l app=nginx-app2
 ```
 
 ## Schritt 6: Zugriff testen (eines Pods aus neuem Deployment)
@@ -106,7 +106,7 @@ kubectl get all -l app:nginx-app2
 ```
 # PodIP eines beliebigen Pods raussuchen
 # z.B. 
-kubectl get pods -o wide -l app:nginx-app2
+kubectl get pods -o wide -l app=nginx-app2
 
 # busybox starten 
 kubetl run -it --rm --image=busybox podtester
