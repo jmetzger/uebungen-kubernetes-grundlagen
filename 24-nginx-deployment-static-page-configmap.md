@@ -115,6 +115,7 @@ kubectl run -it --rm --image=busybox podtester
 ````
 
 ```
+# Im busybox - pod (container)
 # Pod anpingen
 # ping <PodIP>
 # z.B.
@@ -124,8 +125,9 @@ ping  10.244.1.99
 wget -O - http://<PodIP>
 # z.B.
 wget -O - http://10.244.1.99
+```
 
-# pod verlassen
+```
+# busybox pod beenden und verlassen
 exit
-
 ```
