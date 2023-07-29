@@ -13,7 +13,7 @@ cd
 cd manifests/03-deploy
 mkdir app1
 mv deploy.yml app1
-mv services.yml app1
+mv service.yml app1
 mkdir app2
 cd app2
 ```
