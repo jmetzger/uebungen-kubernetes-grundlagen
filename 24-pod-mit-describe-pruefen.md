@@ -31,7 +31,7 @@ kubectl run --image=foo foomaster
 # Hier sieht es aus, als würde er laufen
 kubectl get pods foomaster 
 # Das zeigt uns die Wahrheit !!!
-kubectl describe foomaser
+kubectl describe foomaster
 ```
 
 ## Schritt 4: Den Pod löschen 
