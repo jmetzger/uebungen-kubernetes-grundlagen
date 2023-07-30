@@ -22,7 +22,6 @@ kubectl get pods -l app=nginx
 # z.B. Hier Deinen eigenen Pod einsetzen
 kubectl get pods nginx-deployment-79b55879bb-5rkbz
 kubectl describe pods nginx-deployment-79b55879bb-5rkbz
-kubectl events pods 
 ```
 
 ## Schritt 3: Einen pod starten, der nicht laufen kann (weil es das image nicht gibt
