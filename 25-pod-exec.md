@@ -1,4 +1,4 @@
-# Pod mit describe prüfen 
+# In den Pod mit exec hinweinwechseln 
 
 ## Voraussetzung
 
