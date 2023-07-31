@@ -46,7 +46,7 @@ ping www.google.de
 exit
 ```
 
-## Schritt 5: Ein Kommando in einem Pod ausführen
+## Schritt 4: Ein Kommando in einem Pod ausführen
 
 ```
 kubectl exec nginx-deployment-79b55879bb-5rkbz -- ls -la
