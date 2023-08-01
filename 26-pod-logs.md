@@ -23,13 +23,13 @@ kubectl get pods -l app=nginx
 kubectl logs nginx-deployment-79b55879bb-5rkbz  
 
 # Wenn es sehr viele sind, kannst du auch einfach ein "less" dahinterhängen
-kubectl logs nginx-deployment-79b55879bb-5rkbz
+kubectl logs nginx-deployment-79b55879bb-5rkbz | less
 
 # oder aber nur die der letzten Stunde anschauen
 kubectl logs --since=1h nginx-deployment-79b55879bb-5rkbz
 ```
 
-## Schritt 3: Die Logs aller Pods mit einem bstimmten Label ausgeben 
+## Schritt 3: Die Logs aller Pods mit einem bestimmten Label ausgeben 
 
 ```
 kubectl logs -l app=nginx --prefix
@@ -48,7 +48,7 @@ kubectl get svc app1
 ```
 # prefix zeigt zusätzlich die Quelle (d.h. den Pod an)
 # Sehr zu empfehlen 
-kubectl logs -l app=nginx --max-log-requests=8 -f
+kubectl logs -l app=nginx --max-log-requests=8 --prefix -f
 ```
 
 ```
