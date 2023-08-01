@@ -17,4 +17,5 @@ zum einfachen Kopieren für das Training.
   * [23 Den Service von aussen erreichen (LoadBalancer = EXTERNAL-IP)](23-service-loadbalancer-test-service-pods.md)
   * [24 Eine Pod mit Describe prüfen](24-pod-mit-describe-pruefen.md)
   * [25 In den Pod(Container) mit exec reinwechseln](25-pod-exec.md)
+  * [26 Zeige die Logs des/der Pods](26-pod-logs.md)
   * [30 Nginx-Deployment mit einer statischen Seite erstellen (configmap)](30-nginx-deployment-static-page-configmap.md)
