@@ -5,7 +5,7 @@
   * Das Deployment sollte aus einer der letzten Übungen eingerichtet sein
   * Das Projektverzeichnis manifests/03-deploy vorhanden sein.
   * Die Pods aus dem Deployment sollten laufen 
-    * kubectl get pods -l apps=nginx 
+    * kubectl get pods -l app=nginx 
   * Falls nicht: Bitte nochmal zur einer der vorigen Lektionen zurückgehen und das Deployment einrichten !
 
 
