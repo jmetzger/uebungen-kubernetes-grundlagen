@@ -3,6 +3,7 @@
 ## Voraussetzung
 
   * Das Deployment sollte aus einer der letzten Übungen eingerichtet sein
+  * Der Service sollte mit type: LoadBalancer eingerichtet sein 
   * Das Projektverzeichnis manifests/03-deploy vorhanden sein.
   * Die Pods aus dem Deployment sollten laufen 
     * kubectl get pods -l app=nginx 
@@ -20,38 +21,59 @@ kubectl get pods -l app=nginx
 ```
 # -> Hier Deinen eigenen Pod-Namen einsetzen <- 
 kubectl logs nginx-deployment-79b55879bb-5rkbz  
+
 # Wenn es sehr viele sind, kannst du auch einfach ein "less" dahinterhängen
+kubectl logs nginx-deployment-79b55879bb-5rkbz
 
 # oder aber nur die der letzten Stunde anschauen
-kuectl logs --since=s
-kubectl exec -it nginx-deployment-79b55879bb-5rkbz -- bash
+kubectl logs --since=1h nginx-deployment-79b55879bb-5rkbz
 ```
 
-## Schritt 3: Analysieren / Kommandos im Pod ausführen 
+## Schritt 3: Die Logs aller Pods mit einem bstimmten Label ausgeben 
 
 ```
-# Welches Linux - geht oft aber nicht immer: 
-cat /etc/os-release
-ls -la
-cat /etc/passwd
-# Welcher Nutzer bin ich
-id
+kubectl logs -l app=nginx --prefix
+# hier könntest du auch bereits nach bestimmten Suchworten selektieren
+kubectl logs -l app=nginx --prefix | grep -i error 
 ```
 
+## Schritt 4: Die Logs aller Pods mit einem bestimmten Label FORTLAUFEND ausgeben
+
 ```
-# Folgende Kommandos gehen oftmals nicht,
-# weil sie nicht im Image installiert sind
-ping www.google.de
+# EXTERNAL-IP des LoadBalancers für den Service rausfinden
+# z.B. 188.166.194.18
+kubectl get svc app1 
 ```
 
 ```
-# pod wieder verlassen
-exit
+# prefix zeigt zusätzlich die Quelle (d.h. den Pod an)
+# Sehr zu empfehlen 
+kubectl logs -l app=nginx --max-log-requests=8 -f
 ```
 
-## Schritt 4: Ein Kommando in einem Pod ausführen
+```
+# Öffne einen Browser mit Deiner EXTERNAL-IP
+# http://188.166.194.18
+```
 
 ```
-kubectl exec nginx-deployment-79b55879bb-5rkbz -- ls -la
+# Im Terminal Ausgabe mit
+STRG + C
+# beenden
+```
 
+```
+# bestimmte Suchworte selektieren
+kubectl logs -l app=nginx --prefix | grep -i error 
+```
+
+```
+# Öffne einen Browser mit Deiner EXTERNAL-IP
+# http://188.166.194.18
+```
+
+```
+# Im Terminal Ausgabe mit
+STRG + C
+# beenden
 ```
