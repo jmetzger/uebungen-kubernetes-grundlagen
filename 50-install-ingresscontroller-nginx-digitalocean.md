@@ -1,4 +1,4 @@
-# Install Ingress Controller (nginx) on DigitalOcean (DOKS) 
+# Wir installieren den Ingress Controller (nginx) in unserem Cluster (DigitalOcean DOKS)
 
 ## Grundlagen
 
