@@ -19,10 +19,7 @@ helm repo update
 
 # --namespace :: Bitte im Namespace ingress installieren
 # --create-namespace :: Bitte Namespace erstellen, wenn nicht vorhanden
-# --set controller.publishService.enabled=true ::
-#       Setze das folgende Value: controller.publishService.enable = true
-#       Setze den Service für den Nginx auf LoadBalancer 
-helm install nginx-ingress ingress-nginx/ingress-nginx --namespace ingress --create-namespace --set controller.publishService.enabled=true 
+helm install nginx-ingress ingress-nginx/ingress-nginx --namespace ingress --create-namespace
 
 # Es dauert jetzt ein wenig, bis wir eine External-IP bekommen
 kubectl -n ingress get all
