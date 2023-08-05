@@ -34,4 +34,4 @@ nginx-ingress-ingress-nginx-controller   LoadBalancer   10.245.78.34   157.245.2
 
 ## Referenz
 
-  * https://kubernetes.github.io/ingress-nginx/deploy/
+  * [https://kubernetes.github.io/ingress-nginx/deploy/](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx)https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx
