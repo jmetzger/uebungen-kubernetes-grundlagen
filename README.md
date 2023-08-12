@@ -19,4 +19,5 @@ zum einfachen Kopieren für das Training.
   * [25 In den Pod(Container) mit exec reinwechseln](25-pod-exec.md)
   * [26 Zeige die Logs des/der Pods](26-pod-logs.md)
   * [30 Nginx-Deployment mit einer statischen Seite erstellen (configmap)](30-nginx-deployment-static-page-configmap.md)
+  * [35 Wir installieren den helm-client unter Linux](35-helm-install-linux.md)
   * [50-Install Ingress Controller (nginx) on Digitalocean (DOKS)](50-install-ingresscontroller-nginx-digitalocean.md)
