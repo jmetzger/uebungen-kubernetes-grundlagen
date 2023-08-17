@@ -37,7 +37,7 @@ spec:
 ```
 
 ```
-kubectl -n monitoring-app -f 01-pod.yml
+kubectl -n monitoring-app apply -f 01-pod.yml
 # all in einem bestimmten namespaces anzeigen
 kubectl -n monitoring-app get all 
 ```
