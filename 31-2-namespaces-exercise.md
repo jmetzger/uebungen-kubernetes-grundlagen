@@ -16,6 +16,7 @@ kubectl create ns booking-app
 ## Schritt 3: manifests in einem bestimmten namespace ausrollen 
 
 ```
+cd
 cd manifests
 mkdir 31-namespaces
 cd 31-namespaces
