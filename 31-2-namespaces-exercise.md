@@ -39,7 +39,7 @@ spec:
 ```
 kubectl -n monitoring-app -f 01-pod.yml
 # all in einem bestimmten namespaces anzeigen
-kubectl -n monitoring-app all 
+kubectl -n monitoring-app get all 
 ```
 
 ## Schritt 4: namespaces wechseln (default und parameter) 
