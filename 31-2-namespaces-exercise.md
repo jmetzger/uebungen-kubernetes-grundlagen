@@ -19,7 +19,7 @@ kubectl create ns booking-app
 cd manifests
 mkdir 31-namespaces
 cd 31-namespaces
-nano 01-pod.yaml
+nano 01-pod.yml
 ```
 
 ```
@@ -49,6 +49,10 @@ kubectl config set-context --current --namespace=monitoring-app
 ```
 
 ```
+# jetzt ist der "Standard-Namespaces" : monitoring-app
+# der bei jeder Abfrage verwendet wird
+kubectl get all
+
 # anderen namespace abfragen
 kubectl -n booking-app get all
 ```
@@ -61,6 +65,7 @@ kubectl config set-context --current --namespace=default
 ## Schritt 5: namespace löschen 
 
 ```
+# Damit werden auch alle Objekte im Namespace gelöscht
 kubectl delete ns booking-app
 kubectl delete ns monitoring-app
 ```
