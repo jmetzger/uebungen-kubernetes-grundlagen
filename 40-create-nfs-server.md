@@ -1,11 +1,11 @@
 # Erstelle einen NFS-Server auf DigitalOcean 
 
-## Step 1: Finde das private IP-Netz heraus in dem Dein Cluster bei Digitalocean läuft 
+## Step 1: Finde das private IP-Netz heraus (in dem Dein Cluster bei Digitalocean läuft) 
 
 ```
 # In der Linux Console (z.B. WSL) 
 kubectl get nodes -o wide
-# 10.135.0.x
+# z.B. 10.135.0.x
 # Bei Dir wird das ein anderes Netz sein.
 ```
 
