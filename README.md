@@ -22,4 +22,5 @@ zum einfachen Kopieren für das Training.
   * [31-2 Praxisübung Namespaces](31-2-namespaces-exercise.md)
   * [35 Wir installieren den helm-client unter Linux](35-helm-install-linux.md)
   * [36 Die bash completion für helm konfigurieren](36-helm-configure-bash-completion.md)
+  * [40 NFS-Server auf DigitalOcean erstellen](40-create-nfs-server.md)
   * [50-Install Ingress Controller (nginx) on Digitalocean (DOKS)](50-install-ingresscontroller-nginx-digitalocean.md)
