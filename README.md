@@ -24,3 +24,4 @@ zum einfachen Kopieren für das Training.
   * [36 Die bash completion für helm konfigurieren](36-helm-configure-bash-completion.md)
   * [40 NFS-Server auf DigitalOcean erstellen](40-create-nfs-server.md)
   * [50-Ingress Controller in Digitalocean-Cluster (DOKS) installieren](50-install-ingresscontroller-nginx-digitalocean.md)
+  * [52-Anpassen Deines lokalen Hosts Files](52-adjust-local-hosts-file.md)
