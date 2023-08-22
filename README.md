@@ -23,5 +23,6 @@ zum einfachen Kopieren für das Training.
   * [35 Wir installieren den helm-client unter Linux](35-helm-install-linux.md)
   * [36 Die bash completion für helm konfigurieren](36-helm-configure-bash-completion.md)
   * [40 NFS-Server auf DigitalOcean erstellen](40-create-nfs-server.md)
+  * [42 nginx Deployment mit Shared Volume](42-nginx-deployment-mit-shared-volume.md)
   * [50-Ingress Controller in Digitalocean-Cluster (DOKS) installieren](50-install-ingresscontroller-nginx-digitalocean.md)
   * [52-Anpassen Deines lokalen Hosts Files](52-adjust-local-hosts-file.md)
