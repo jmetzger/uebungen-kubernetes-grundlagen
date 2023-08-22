@@ -22,7 +22,6 @@ cd 03-deploy/app1
 
 ![image](https://github.com/jmetzger/uebungen-kubernetes-grundlagen/assets/1933318/f07e28fd-457c-477b-9f18-044b0ab562ea)
 
-
 ```
 nano 01-pv.yml
 ```
@@ -117,5 +116,4 @@ spec:
       - name: nfsvol
         persistentVolumeClaim:
           claimName: pv-nfs-claim
-
 ```
