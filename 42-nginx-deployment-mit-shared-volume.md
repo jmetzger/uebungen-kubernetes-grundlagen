@@ -201,6 +201,7 @@ kubectl run -it --rm podtester --image=busybox
 
 ```
 # Im Container des Pods podtester
+# Ist wieder erreichbar, oder ?
 wget -O - http://<ClusterIP>
 # exit 
 ```
