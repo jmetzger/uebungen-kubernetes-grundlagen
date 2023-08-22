@@ -112,7 +112,7 @@ spec:
           - name: nfsvol
             mountPath: "/usr/share/nginx/html"
 
-    volumes:
+      volumes:
       - name: nfsvol
         persistentVolumeClaim:
           claimName: pv-nfs-claim
