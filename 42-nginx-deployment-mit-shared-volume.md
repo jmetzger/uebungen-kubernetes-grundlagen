@@ -117,3 +117,90 @@ spec:
         persistentVolumeClaim:
           claimName: pv-nfs-claim
 ```
+
+```
+kubectl apply -f deploy.yaml
+```
+
+## Schritt 4: Service anpassen
+
+```
+nano service.yml
+```
+
+```
+# Wir löschen oder kommentieren die Zeile: type: LoadBalancer
+# Wir brauchen nur eine ClusterIP
+spec:
+  # type: LoadBalancer # Not needed, because we only need type: ClusterIP which is default 
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: nginx
+```
+
+```
+kubectl apply -f service.yml
+```
+
+## Schritt 5: Daten in NFS schreiben und testen 
+
+```
+# Eine index.html im Container hinzufügen   
+kubectl exec -it deploy/nginx-deployment -- bash 
+```
+
+```
+# Im Container 
+echo "Hallo, junger Padavan" > /usr/share/nginx/html/index.html 
+exit 
+```
+
+```
+# ClusterIP herausfinden  
+kubectl get svc 
+```
+
+```
+# Pod zum Testen hochfahren 
+kubectl run -it --rm podtester --image=busybox
+```
+
+```
+# Im container des Pods "podtester" 
+wget -O - http://<ClusterIP>
+exit
+```
+
+```
+# Deployment zerstören  
+kubectl delete -f deploy.yml 
+```
+
+```
+# Nochmal  
+kubectl run -it --rm podtester --image=podtester  
+```
+
+```
+# Keine Verbindung 
+wget -O - http://<ClusterIP>
+exit
+```
+
+## Schritt 6: ReDeployen. Sind Daten wieder da ?
+
+```
+# now start deployment again 
+kubectl apply -f deploy.yml 
+
+# and try connection again  
+kubectl run -it --rm podtester --image=busybox  
+```
+
+```
+# Im Container des Pods podtester 
+# curl http://<cluster-ip>
+# exit 
+```
