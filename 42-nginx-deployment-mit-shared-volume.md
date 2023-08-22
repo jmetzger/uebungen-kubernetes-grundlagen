@@ -188,7 +188,7 @@ kubectl delete -f deploy.yml
 
 ```
 # Nochmal  
-kubectl run -it --rm podtester --image=podtester  
+kubectl run -it --rm podtester --image=busybox  
 ```
 
 ```
