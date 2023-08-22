@@ -109,8 +109,8 @@ spec:
         - containerPort: 80
         # AB HIER IST DER NEUE TEIL
         volumeMounts:
-          - name: nfsvol
-            mountPath: "/usr/share/nginx/html"
+        - name: nfsvol
+          mountPath: "/usr/share/nginx/html"
 
       volumes:
       - name: nfsvol
