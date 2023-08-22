@@ -200,7 +200,7 @@ kubectl run -it --rm podtester --image=busybox
 ```
 
 ```
-# Im Container des Pods podtester 
-# curl http://<cluster-ip>
+# Im Container des Pods podtester
+wget -O - http://<ClusterIP>
 # exit 
 ```
