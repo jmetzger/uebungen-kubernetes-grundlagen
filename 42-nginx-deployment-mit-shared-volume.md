@@ -129,6 +129,14 @@ nano service.yml
 ```
 
 ```
+# nano service.yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: app1
+  labels:
+    svc: nginx
+
 # Wir löschen oder kommentieren die Zeile: type: LoadBalancer
 # Wir brauchen nur eine ClusterIP
 spec:
