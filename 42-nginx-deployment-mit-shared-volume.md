@@ -4,7 +4,7 @@
 
   * In manifests/03-deploy/app1 sollten service.yml und deploy.yml vorhanden sein
   * Falls nicht: Bitte nochmal zur Lektion zum Einrichten des Services und des Deployments zurückgehen
-  * <INTERNE-IP-NFS-SERVER> aus der vorigen Übung 
+  * INTERNE-IP-NFS-SERVER aus der vorigen Übung 
 
 ## Vorbereitung 
 
