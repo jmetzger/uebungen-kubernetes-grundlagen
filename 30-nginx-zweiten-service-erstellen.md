@@ -39,6 +39,6 @@ kubectl apply -f .
 kubectl get svc app2
 # Endpunkte gefunden ?
 kubectl describe svc app2
-# Alle anzeigen, wenn es zuviele sind
-kubectl get endpoints app2 
+# Alle Endpunkte anzeigen, wenn es zuviele sind
+kubectl get endpoints app2 -o yaml
 ```
