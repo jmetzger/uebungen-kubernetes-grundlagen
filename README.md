@@ -19,6 +19,7 @@ zum einfachen Kopieren für das Training.
   * [25 In den Pod(Container) mit exec reinwechseln](25-pod-exec.md)
   * [26 Zeige die Logs des/der Pods](26-pod-logs.md)
   * [30 Nginx-Deployment mit einer statischen Seite erstellen (configmap)](30-nginx-deployment-static-page-configmap.md)
+  * [30 Nginx-Wir stellen den zweiten Service für den statischen nginx](30-nginx-zweiten-service-erstellen.md)
   * [31-2 Praxisübung Namespaces](31-2-namespaces-exercise.md)
   * [35 Wir installieren den helm-client unter Linux](35-helm-install-linux.md)
   * [36 Die bash completion für helm konfigurieren](36-helm-configure-bash-completion.md)
