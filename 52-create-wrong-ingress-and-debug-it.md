@@ -375,6 +375,7 @@ spec:
 
 ```
 kubectl apply -f .
+kubectl get ingress
 ```
 
 ## Schritt 3: Wir testen die fertige und angewendete Ingress-Config 
