@@ -14,15 +14,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx
-  labels:
-    app: nginx
 spec:
   ports:
   - port: 80
     name: web
   clusterIP: None
   selector:
-    app: nginx
+    app: nginx-sts
 ---
 apiVersion: apps/v1
 kind: StatefulSet
@@ -33,11 +31,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: nginx-sts
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx-sts
     spec:
       containers:
       - name: nginx
