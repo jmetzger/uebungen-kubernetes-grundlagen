@@ -26,14 +26,14 @@ spec:
       paths:
         - path: /
           backend:
-            serviceName: apple-service
+            serviceName: app1
             servicePort: 80
-  - host: "app1.dein-training.de"
+  - host: "app2.dein-training.de"
     http:
       paths:
         - path: /
           backend:
-            serviceName: apple-service
+            serviceName: app2
             servicePort: 80
 
 
