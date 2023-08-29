@@ -54,8 +54,14 @@ kubectl apply -f .
 ## Schritt 2: Erkunden 
 
 ```
-ping web-0.nginx 
-ping web-1.nginx 
+kubectl run -it --rm podtester --image=busybox
+```
+
+```
+# in der busybox 
+ping -c4 web-0.nginx 
+ping -c4 web-1.nginx 
+exit
 ```
 
 ## Referenz 
