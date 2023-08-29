@@ -233,7 +233,7 @@ kubectl apply -f .
 # --> Fehler 
 ```
 
-### (Mini-)Schritt 2.4: Nächsten Fehler verstehen und umsetzen (servicePort) 
+### (Mini-)Schritt 2.5: Nächsten Fehler verstehen und umsetzen (servicePort) 
 
 ```
 # Folgender Fehler nach kubectl apply -f .
@@ -302,7 +302,7 @@ kubectl apply -f .
 # --> Fehler
 ```
 
-### (Mini-)Schritt 2.5: Wir beheben den letzten Fehler 
+### (Mini-)Schritt 2.6: Wir beheben den letzten Fehler 
 
 
 
