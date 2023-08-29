@@ -28,3 +28,4 @@ zum einfachen Kopieren für das Training.
   * [50-Ingress Controller in Digitalocean-Cluster (DOKS) installieren](50-install-ingresscontroller-nginx-digitalocean.md)
   * [52-Anpassen Deines lokalen Hosts Files](52-adjust-local-hosts-file.md)
   * [54-Wir erstellen eine fehlerhafte Ingress-Config und finden den Fehler !](54-create-wrong-ingress-and-debug-it.md)
+  * [65-Wir erstellen und erkunden ein Statefulset](65-statefulset.md)
