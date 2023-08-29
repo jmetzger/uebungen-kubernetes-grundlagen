@@ -3,8 +3,9 @@
 ## Voraussetzungen 
 
   * Es existieren bereits die Services: app1 und app2
-  * Es existieren die Deployments: nginx-deployment (mit shared volume), nginx-custom-index 
-  * Wenn nicht, gehe zu den vorigen Übungen zurück und erstelle sie. 
+  * Es existieren die Deployments: nginx-deployment (mit shared volume), nginx-custom-index
+  * Ein IngressController ist im Cluster installiert. 
+  * Wenn nicht, gehe zu den vorigen Übungen zurück und setzte sie um.
 
 ## Schritt 1: Die falsche Ingress-Config verwenden 
 
