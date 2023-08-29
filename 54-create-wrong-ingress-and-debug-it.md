@@ -1,4 +1,4 @@
-# Wir erstellen eine Ingress-Config und finden den Fehler ! 
+# Wir erstellen eine fehlerhafte Ingress-Config und finden den Fehler ! 
 
 ## Voraussetzungen 
 
