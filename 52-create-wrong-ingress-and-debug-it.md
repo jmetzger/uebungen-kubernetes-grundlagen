@@ -25,20 +25,20 @@ nano ingress.yml
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: example-ingress
+  name: apps-ingress
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-  - host: "app1.dein-training.de
+  - host: app1.dein-training.de
     http:
       paths:
         - path: /
           backend:
             serviceName: app1
             servicePort: 80
-  - host: "app2.dein-training.de"
+  - host: app2.dein-training.de
     http:
       paths:
         - path: /
@@ -51,7 +51,7 @@ spec:
 
 ```
 # ingress - Beim Applying tritt ein Problem auf 
-kubectl apply -f ingress.yml
+kubectl apply -f .
 ```
 
 ## Schritt 2: Wir finden/lösen das Problem 
