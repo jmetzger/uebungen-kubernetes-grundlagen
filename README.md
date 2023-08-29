@@ -27,3 +27,4 @@ zum einfachen Kopieren für das Training.
   * [42 nginx Deployment mit Shared Volume](42-nginx-deployment-mit-shared-volume.md)
   * [50-Ingress Controller in Digitalocean-Cluster (DOKS) installieren](50-install-ingresscontroller-nginx-digitalocean.md)
   * [52-Anpassen Deines lokalen Hosts Files](52-adjust-local-hosts-file.md)
+  * [54-Wir erstellen eine fehlerhafte Ingress-Config und finden den Fehler !](54-create-wrong-ingress-and-debug-it.md)
