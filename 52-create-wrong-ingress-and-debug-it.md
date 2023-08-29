@@ -19,7 +19,6 @@ cd ingresscontroller
 nano ingress.yml
 ```
 
-
 ```
 # Ingress
 apiVersion: extensions/v1beta1
@@ -231,6 +230,7 @@ spec:
 
 ```
 kubectl apply -f .
+# --> Fehler 
 ```
 
 ### (Mini-)Schritt 2.4: Nächsten Fehler verstehen und umsetzen (servicePort) 
@@ -248,8 +248,61 @@ kubectl explain ingress.spec.rules.http.paths.backend
 kubectl explain ingress.spec.rules.http.paths.backend.service
 kubectl explain ingress.spec.rules.http.paths.backend.service.port
 # Und er braucht auch nocht Number
-kubectl explain ingress.spec.rules.http.paths.backend.service.port.Number
-````
+kubectl explain ingress.spec.rules.http.paths.backend.service.port.number
+
+# so würde die Eigenschaft dann im yml-file aussehen.
+# service:
+#   port:
+#     number: 80
+```
+
+```
+# Wir setzen das um
+nano service.yml
+```
+
+```
+# So sieht das korrigierte .yml file aus.
+# Ingress
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: apps-ingress
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: app1.dein-training.de
+    http:
+      paths:
+        - path: /
+          backend:
+            # serviceName: app1 # Vorher
+            # Jetzt:
+            service:
+              name: app1
+              port:
+                number: 80
+  - host: app2.dein-training.de
+    http:
+      paths:
+        - path: /
+          backend:
+            # serviceName: app2 # Vorher
+            # Jetzt:
+            service:
+              name: app2
+              port:
+                number: 80
+```
+
+```
+kubectl apply -f .
+# --> Fehler
+```
+
+### (Mini-)Schritt 2.5: Wir beheben den letzten Fehler 
 
 
 
