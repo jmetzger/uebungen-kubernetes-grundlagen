@@ -11,6 +11,16 @@
   * Wir verwenden eine falsche Ingress-Config aus dem Internet und Debuggen sie.
 
 ```
+cd
+mkdir -p manifests/03-deploy 
+cd manifests/03-deploy
+mkdir -p ingresscontroller
+cd ingresscontroller
+nano ingress.yml
+```
+
+
+```
 # Ingress
 apiVersion: extensions/v1beta1
 kind: Ingress
