@@ -304,41 +304,94 @@ kubectl apply -f .
 
 ### (Mini-)Schritt 2.6: Wir beheben den letzten Fehler 
 
+```
+# Fehler
+The Ingress "apps-ingress" is invalid:
+* spec.rules[0].http.paths[0].pathType: Required value: pathType must be specified
+* spec.rules[1].http.paths[0].pathType: Required value: pathType must be specified
 
-
-
-## Solution
+# Bedeutet
+pathType ist jetz ein Pflichtfeld und wir müssen es es ergänzen
+```
 
 ```
-# in kubernetes 1.22.2 - ingress.yml needs to be modified like so.
+# Welche Werte sind möglich ?
+kubectl explain ingress.spec.rules.http.paths.pathType
+```
+
+```
+[...]
+Possible enum values:
+     - `"Exact"` matches the URL path exactly and with case sensitivity.
+     - `"ImplementationSpecific"` matching is up to the IngressClass.
+     [...]
+     identically to Prefix or Exact path types.
+     - `"Prefix"` matches based on a URL path prefix split by '/'.
+```
+
+```
+# Anpassen
+nano ingress.yml
+```
+
+```
+# Wir entscheiden uns für Prefix 
+# So sieht das korrigierte .yml file aus.
+# Ingress
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: example-ingress
+  name: apps-ingress
   annotations:
     ingress.kubernetes.io/rewrite-target: /
-    # with the ingress controller from helm, you need to set an annotation 
-    # old version useClassName instead 
-    # otherwice it does not know, which controller to use
-    # kubernetes.io/ingress.class: nginx 
 spec:
   ingressClassName: nginx
   rules:
-  - host: "app12.lab.t3isp.de"
+  - host: app1.dein-training.de
     http:
       paths:
-        - path: /apple
-          pathType: Prefix
+        - path: /
+          pathType: Prefix  # <- EINGEFUEGT 
           backend:
+            # serviceName: app1 # Vorher
+            # Jetzt:
             service:
-              name: apple-service
+              name: app1
               port:
                 number: 80
-        - path: /banana
-          pathType: Prefix
+  - host: app2.dein-training.de
+    http:
+      paths:
+        - path: /
+          pathType: Prefix # <- EINGEFUEGT
           backend:
+            # serviceName: app2 # Vorher
+            # Jetzt:
             service:
-              name: banana-service
+              name: app2
               port:
-                number: 80                
+                number: 80
+```
+
+```
+kubectl apply -f .
+```
+
+## Schritt 3: Wir testen die fertige und angewendete Ingress-Config 
+
+```
+# Im Browser aufrufen
+# 1. URL app1
+http://app1.dein-training.de
+
+# 2. URL app2
+http://app2.dein-training.de
+```
+
+```
+# ALTERNATIVE in der (WSL-) - Konsole 
+# 1. URL app1 
+curl http://app1.dein-training.de
+# 2. URL app2
+curl http://app2.dein-training.de
 ```
