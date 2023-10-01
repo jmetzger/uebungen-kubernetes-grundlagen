@@ -8,6 +8,7 @@ zum einfachen Kopieren für das Training.
   * [07 Bash Completion einrichten](07-bash-completion-einrichten.md)
   * [08 Vim für yaml konfigurieren](08-vim-fuer-yaml-konfigurieren.md)
   * [09 Nano für die einfache Nutzung von yaml-Dateien einrichten](09-nano-fuer-die-einfache-nutzung-von-yaml-dateien-einrichten.md)
+  * [11 Einen Pod starten und löschne](11-einen-pod-starten-und-loeschen.md)
   * [12 Pod mit manifest erstellen](12-pod-mit-manifest-erstellen.md)
   * [14 Replicaset erstellen und erforschen](14-replicaset-erstellen-und-erforschen.md)
   * [15 Replicaset löschen](15-replicaset-loeschen.md)
