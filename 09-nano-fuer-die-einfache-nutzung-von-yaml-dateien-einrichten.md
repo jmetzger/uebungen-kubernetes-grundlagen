@@ -1,5 +1,4 @@
-# nano (Einrückung/Highlightning für yaml-dateien
-aktivieren)
+# nano (Einrückung/Highlightning für yaml-dateien aktivieren)
 
 ## Ubuntu (im Unterverzeichnis /etc/nanorc - systemweit)
 
