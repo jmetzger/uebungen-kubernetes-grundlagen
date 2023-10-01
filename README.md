@@ -6,6 +6,7 @@ zum einfachen Kopieren für das Training.
 ## Liste der Übungen/Materialien
 
   * [07 Bash Completion einrichten](07-bash-completion-einrichten.md)
+  * [09 Nano für die einfache Nutzung von yaml-dateien einrichten](09-nano-fuer-die-einfache-nutzung-von-yaml-dateien-einrichten.md)
   * [12 Pod mit manifest erstellen](12-pod-mit-manifest-erstellen.md)
   * [14 Replicaset erstellen und erforschen](14-replicaset-erstellen-und-erforschen.md)
   * [15 Replicaset löschen](15-replicaset-loeschen.md)
